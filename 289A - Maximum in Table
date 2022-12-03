@@ -1,0 +1,113 @@
+//  SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSHBYYYWSSSS#BYYTTTYWSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSB9O1==?????zzCC111>>;;;;;;;;;;;<?TSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS9Olll=l======??????????>>>>>>;;;;;;;;;:;?TSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSSSSSSSSSSSS9ttlllllllll=l=======?????????>>>>>>;;;;;;;;;;?TSSSSSSSSSSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSSSSSSSSSBOttOtttttltlllllllll=======??????????>>>>>>>;;;;;;?TSSSSSSSSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSSSSSSSBttwOtttttttttttttlllllllll========?????????>>>>>>;;;;;<TSSSSSSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSSSSSBrwZrttttttttttttttttttlllllllllll======???????????>>>>>>;;?HSSSSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSSSSSw0trtrrtrtrttrtttttttttttttlllOllllll========????<<zz??>>>>>>ZSSSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSSSX0ttrtrOOttrttrttOOttttttttttttltwllllllllll========??wy?????>>>vZSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSS0ttrI+wV1rtttttttwZtttttttltttOwylOXOllllllllllll=l====1dkz???????vZdSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSrrwrtwZCjttttttttwSttOlllltllllwtXOlZkOlllllllllllllll==z+dk===?????X2JSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSBrtwwtrw0<jttttttttOXllOttltllttllOZwHOtXkyltlllllllllllllll<+XZ======?dk?JSSSSSSSSSSSS
+//  SSSSSSSSSSSSStwdZtwXC<+ttttttOOOd6ltZlltllllttllStWWOOHWytttttltltOllltllz:zHllll===zX=?dSSSSSSSSSSS
+//  SSSSSSSSSSBrwdKOtwW3;;zrttttwZwXRlldOllltltlltttwlXvktdXWytltttttttOttlttl<<dklllllllZ===dSSSSSSSSSS
+//  SSSSSSSSS8tQS#ttwW3;;;1trttwSwfUOlORltllltlllllldtX>dktDOWOtlttltttOOttltO<;+WOllllllXlllzSSSSSSSSSS
+//  SSSSSSSS9OdS#Ottd$;;;;;<?1z0OKjRltd0llltOllllllldZX>?WOw_WWOtttttttttOttI<;;<dkttttllllllldSSSSSSSSS
+//  SSSSSSS9wSSSSttwS<;;;;>;;;J<j>(I<?U111zltllllllld0X>~dkwl(WkttlttlOOwWk<;;:;;zHttttttwOllllSSSSSSSSS
+//  SSSSSSBdSSS8tttdI+zttttttdSXt~dlzXwlllzzOzzzzzlldkW<~?kOk~?sx++++jdHSH6+++<;;jdZtttttdkOtlldSSSSSSSS
+//  SSSSS#dSSS#tttw0+tttttttdKdf((RsdfRllllldZllltlldWK~~_W0w_~OWOlOdgg9ZtOWOtttz+wktttttdpktttwSSSSSSSS
+//  SSSSSWSSSSSlttdIttttttOdWHH>~(IzWDRll=llzRlllzlldk$>++dkd<~_XkdgH9tttttdktttt+OkrttrtdfpkttOSSSSSSSS
+//  SSSSNWSSS#Zttlk=tttttOXWWd$_.(IdW1R=llll=SlllzOldK<_._(kd6+-(SS9lltttttrWktttztWZttrwXppWttrSSSSSSSS
+//  SSSSNSSSS#lltwDzttllOXyW0X:..(OXk<Rl=ll=lwOlllOld3<``.(Rd>~?CdklllltttttXdXttzOWktrwwWpfpkrtSSSSSSSS
+//  SSSSSSSSS@ltldIzlttOXyW$w$```(OyD(Rl==llldZ=llIlw;~```-Xd:~~~~UkylltttAyHdgSrzObRtOXwpfppWrrSSSSSSSS
+//  SSSSSSSSS@llldtlllldVyW+d>```.wZ$ wl==lI=wRl=ll=w<```` dd_..~~(RZXOQdggHH9ZwrzwHWrdXXppfppkrSSSSSSSS
+//  SSSSSSSSS#llldlltlwyyyD(S-...,Wk] zI=l=llzWzl=l=P~```` jZ``...~zQkH@SBUtrZtrtldHRdSdpfpffpkwSSSSSSSS
+//  SSSSNSSSSNZllXtllldVyW3(Sf=<ONSHP~(k===l=zdk=lld3```...(C````..(S96lttttrrtrrtdHWHXpfpppfpRwSSSSSSSS
+//  SSSSSSSSSSNzzWZllzyyyy(W@`  =~SWK6 jz=lzlzvRz=lZ`.I+JgkWS&-. `..(ZltlttttrtttrWWHppfppfpppSdSSSSSSSS
+//  SSSSSSSSSSSkAWRllzVyyS_(b    .SNHU-(Uz=lI={XkzO>.dVT7<TSHSNHHx-.(kwZyltttrtrrdHHpfppfpffpp0dSSSSSSSS
+//  SSSSSSSSSSSSKyWzOzyyyk.`<!  hdWSH]``(S==t=l(kX2 ?_`    WSSHH#HH+.XwkwOttttrwrZ~(HfpfpppfpWwXSSSSSSSS
+//  SSSSSSSSSSSSSHWROOyyyW;` `. (WVS#b```(0=zzz wX!```  a.dS#NS@N(4WhXkXkWtttttwd3O_(HpffpfpfWwSSSSSSSSS
+//  SSSSSSSSSSSSNZvWzXXyyXP```-_ ?o+?!````.4=Z=`(:````  HpbNNSHHH (C=XXyWZWttrdwf:(>.dfppffppSXSSSSSSSSS
+//  SSSSSSSSSSSSSRzuHzXyZXH.``````````````` ?zz ``````` ZKvTHHbWt `` XZyyHZWOdSZ<::~`(fpfpfffXp0WSSSSSSS
+//  SSSSSSSSSSSSSKzyyHvyZZW____.`````````````.I_```````` ?nJzX7^````.WXWyyHyWKZ<:::_`Jffpfpfpfp0WSSSSSSS
+//  SSSSSSSSSSSSS@zZyZWwWyXo-_~(~ ```````````` `````````````` _`````.WXkyyVWSWc::<~ .HffppfffffkXSSSSSSS
+//  SSSSSSSSSSSSSKzZZZZXkUXr~....```````....```````````` ...  ````..JXWWyyW83vXx~..WfffVfWVffffkdSSSSSSS
+//  SSSSSSSSSSSSSRzZZZZZZZZb````````````<````````````./<~._<_.____`(WfdyW3<:~~(XWkVVVVVVVHVVVVV0dSSSSSSS
+//  SSSSSSSSSSSSSSzZZZZZZZWX-```````````````````````````.......~~._j9jX=_~~_(XZyVHHkyyyyWHyyykykOSSSSSSS
+//  SSSSSSSSSSSSSSzuuuuuZXWZW,```````````````````````````````.``..(3<! ...JWyyXWyyyWHkyyWHyyyHyklSSSSSSS
+//  SSSSSSSSSSSSNXzuuuXXuXSuuXh,```````` .... ```````````````````_~ .JWyyyyZyy0HyyZyyZyZXWZZZWHZIdSSSSSS
+//  SSSSSSSSSSSSNwtuuuXkuXXuuuuXh,``````(:::~<?71(,``````````````.(USNUkZZZZZZZHZZ0ZZZZZWWZZZWNXIdSSSSSS
+//  SSSSSSSSSSSSNKOzuzXkuXuuuuuXuXW, ```` _~~~:~~(}```````````.(YC;::<kCfZZZZXO#ZZVZZZZZSZZuuSSNXzSSSSSS
+//  SSSSSSSSSSSSHKOzzuXkzdzzzzuXXzuuU&.``````````````````` .JY>::::;;J=:dZuZuZd#uuruuuud#uuuXSSSNXdSSSSS
+//  SSSSSSSSSSSSSNOvzzXkvSRzzzzXKzuzzzXh, `````````````..JC<;:;;:;;+7<:~(HHuXIdNuuzuuuXSSuuuWSSSSROSSSSS
+//  SSSSSSSSSSSSSNvvvrdkvS#vzzzzHzzzzzuzzUG. ``` ...JdY<:;:;:::;;+v<~~~:(HpHSzSNXZzuzzd#zzzdSSSSSSRdSSSS
+//  SSSSSSSSSSSSSNwrrvdRrSNwvvvvdRvvvzwkzzzzXWWHY=~~O+::::::::<+<~~~~~~~dppppWSSkZzzzwS#zzdSSSSSSSSNSSSS
+//  SSSSSSSSSSSSSS#rrrwRrSSbOrrOZNkrvvvXwvvvvvwX;.~._W_:::::(?!~~~~~~~~(HpppppppHWdvwS#XwdSSSSSSSSSSNSSS
+//  SSSSSSSSSSSSSSNyrrrRrWSSSzOrzdNyrrrZNvrwQWWfb....(r~~_J>_.....~.~~-dpfpffpfpppWHHSNdSSSSSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSNrtrStdSSSNxzrzSNSrrrdNWfVfffP._-.(~_J!............JpfpffpfpfffpppWNppppHSSSSSSSSSSSS
+//  SSSSSSSSSSSSSSSSNOtXtdSSSSSNxzZSSNSgHyVVVVVW%..?/(.,(x-..........(HfffpffpffpffWHHffpffppfVyyWSSSSSS
+
+
+// ----------------------------------------SHAHRIA SARKER SHUVO -----------------------------------------
+//-------------------------------------CSE North South University----------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+
+ /*ll gcd(ll a, ll b)
+{
+  if (b == 0)
+    return a;
+  return gcd(b, a % b);
+}
+
+ll lcm(ll a, ll b)
+{
+    return (a / gcd(a, b)) * b;
+}
+*/
+
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long int
+
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout(n) for(auto v: n) cout<<v<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+
+#define F first
+#define S second
+#define YES cout<<"YES\n"
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO cout<<"NO\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+
+#define testcase ll t;cin >>t; while(t--)
+int main()
+{
+
+   int n;
+   cin >> n;
+   vector<int>vect;
+   vector<int>vv;
+   for(int i=0;i<n;i++)
+   {
+       vect.pb(1);
+       vv.pb(1);
+   }
+   for(int j=1;j<n;j++){
+   for(int i=1;i<n;i++)
+   {
+       vect[i]=vect[i]+vect[i-1];
+   }
+   }
+   cout<<vect[vect.size()-1]<<"\n";
+}
