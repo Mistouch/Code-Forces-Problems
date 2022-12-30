@@ -1,0 +1,71 @@
+// ----------------------------------------SHAHRIA SARKER SHUVO -----------------------------------------
+//-------------------------------------CSE North South University----------------------------------------
+ 
+#include<bits/stdc++.h>
+using namespace std;
+ 
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long int
+ 
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout for(auto v: vect) cout<<v<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+ 
+#define F first
+#define S second
+#define YES cout<<"YES\n"
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO cout<<"NO\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+#define testcase ll t;cin >>t; while(t--)
+vector<bool>isprime;
+vector<ll>primegula;
+void sieve(ll N)
+{
+    isprime.assign(N+1,true);
+    isprime[0]=false;
+    isprime[1]=false;
+    for(int i=4;i<=N;i+=2)
+    isprime[i]=false;
+    for(int i=3;i*i<=N;i+=2){
+        if(!isprime[i])continue;
+        for(int j=i*i;j<=N;j+=(i+i) )
+        {
+            isprime[j]=false;
+        }
+    }
+    for(ll i=2 ; i<=N;i++)
+    {
+        if(isprime[i])
+            primegula.push_back(i);
+    }
+ 
+}
+ 
+int main()
+{
+    sieve(1e6);
+    fastkor;
+  
+   testcase{
+         int n;
+         cin >> n;
+         ll k=0;
+         for(int i=0;i<primegula.size();i++)
+         {
+             int temp=n+primegula[i];
+             if(!isprime[temp])
+             {
+                k=primegula[i];
+                break;
+             }
+         }
+        cout<<k<<"\n";
+   }
+}
