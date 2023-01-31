@@ -1,0 +1,63 @@
+// ----------------------------------------SHAHRIA SARKER SHUVO -----------------------------------------
+//-------------------------------------CSE North South University----------------------------------------
+ 
+#include<bits/stdc++.h>
+using namespace std;
+ 
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long int
+ 
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout for(auto v: vect) cout<<v<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+ 
+#define F first
+#define S second
+#define YES cout<<"YES\n"
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO cout<<"NO\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+#define testcase ll t;cin >>t; while(t--)
+int main()
+{
+    fastkor;
+    testcase
+    {
+        ll n;
+        cin >>n;
+        vector<int>vect;
+ 
+        vectin(n);
+ 
+        vector<int>od;
+        vector<int>ev;
+ 
+        for(int i=0; i<n; i++)
+        {
+            if(vect[i]%2==1)
+                od.pb(i+1);
+            else
+                ev.pb(i+1);
+        }
+ 
+        if(od.size()>=3)
+        {
+            cout<<"YES\n";
+            cout<<od[0]<<" "<<od[1]<<" "<<od[2]<<"\n";
+        }
+        else if(od.size()>=1 && ev.size()>=2)
+        {
+            cout<<"YES\n";
+            cout<<od[0]<<" "<<ev[0]<<" "<<ev[1]<<"\n";
+        }
+    else
+        cout<<"NO\n";
+ 
+    }
+}
