@@ -1,0 +1,76 @@
+// ----------------------------------------SHAHRIA SARKER SHUVO -----------------------------------------
+//-------------------------------------CSE North South University----------------------------------------
+ 
+#include<bits/stdc++.h>
+using namespace std;
+ 
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long int
+ 
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout for(auto v: vect) cout<<v<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+ 
+#define mini_pos(a)    ( min_element((a).begin(), (a).end()) - (a).begin())
+#define maxi_pos(a)    ( max_element((a).begin(), (a).end()) - (a).begin())
+ 
+#define F first
+#define S second
+#define YES cout<<"YES\n"
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO cout<<"NO\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+#define testcase ll t;cin >>t; while(t--)
+int main()
+{
+    fastkor;
+    int n;
+    cin >>n;
+    vector<pair<int,int>>vect;
+    for(int i=0; i<n; i++)
+    {
+        int x,y;
+        cin >>x >> y;
+        vect.push_back({x,y});
+    }
+    sortkor(vect);
+ 
+    bool k=false;
+ 
+    for(int i=0; i<n-1; i++)
+    {
+        for(int j=0; j<n; j++)
+        {
+            int first=vect[i].F;
+            if(vect[i].S>0)
+                first+=vect[i].S;
+            else
+                first+=vect[i].S;
+ 
+ 
+ 
+            int second=vect[j].F;
+            if(vect[j].S>0)
+                second+=vect[j].S;
+            else
+                second+=vect[j].S;
+ 
+            if(first==vect[j].F && second==vect[i].F)
+                k=true;
+        }
+    }
+    if(k)
+        cout<<"YES\n";
+    else
+        cout<<"NO\n";
+ 
+ 
+ 
+ 
+}
