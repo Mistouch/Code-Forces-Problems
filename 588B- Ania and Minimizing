@@ -1,0 +1,83 @@
+// ----------------------------------------SHAHRIA SARKER SHUVO -----------------------------------------
+//-------------------------------------CSE North South University----------------------------------------
+ 
+#include<bits/stdc++.h>
+using namespace std;
+ 
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long int
+ 
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout for(auto v: vect) cout<<v<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+ 
+#define mini_pos(a)    ( min_element((a).begin(), (a).end()) - (a).begin())
+#define maxi_pos(a)    ( max_element((a).begin(), (a).end()) - (a).begin())
+ 
+#define F first
+#define S second
+#define YES cout<<"YES\n"
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO cout<<"NO\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+#define testcase ll t;cin >>t; while(t--)
+int main()
+{
+  fastkor;
+  int n,k;
+  cin >> n >> k;
+    string s;
+    cin >> s;
+    if(k==0)
+    {
+        cout<<s<<"\n";
+        return 0;
+    }
+ 
+     if(s.size()==1 && n==1)
+    {
+        cout<<0<<"\n";
+        return 0;
+    }
+    if(s[0]!='1')
+    {
+        s[0]='1';
+        int cnt=0;
+        if(k==1)
+        {
+            cout<<s<<"\n";
+            return 0;
+        }
+        for(int i=1;i<n;i++)
+        {
+            if(s[i]!='0'){
+            s[i]='0';
+            cnt++;
+            }
+            if(cnt==k-1)
+                break;
+        }
+    }
+    else
+    {
+        int cnt=0;
+        for(int i=1;i<n;i++)
+        {
+             if(s[i]!='0'){
+            s[i]='0';
+            cnt++;
+            }
+            if(cnt==k)
+                break;
+        }
+    }
+    cout<<s<<"\n";
+ 
+ 
+}
