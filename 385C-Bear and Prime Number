@@ -1,0 +1,88 @@
+// ----------------------------------------SHAHRIA SARKER SHUVO -----------------------------------------
+//-------------------------------------CSE North South University----------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+ 
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long int
+ 
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout for(auto v: vect) cout<<v<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+ 
+#define mini_pos(a)    ( min_element((a).begin(), (a).end()) - (a).begin())
+#define maxi_pos(a)    ( max_element((a).begin(), (a).end()) - (a).begin())
+ 
+#define F first
+#define S second
+#define YES cout<<"YES\n"
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO cout<<"NO\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+#define testcase ll t;cin >>t; while(t--)
+vector<bool>isprime;
+vector<int>primegula;
+const int N=10000007;
+void sieve()
+{
+    isprime.assign(N+1,true);
+    isprime[0]=isprime[1]=false;
+    for(ll i=2;i*i<=N;i++)
+    {
+        if(!isprime[i])
+            continue;
+        for(int j=i*i;j<=N;j+=i)
+            isprime[j]=false;
+ 
+    }
+    for(ll i=2;i<=N;i++)
+    {
+        if(isprime[i])
+            primegula.pb(i);
+    }
+}
+ 
+int occur[N],cnt[N],pref[N];
+int main()
+{
+    fastkor;
+    sieve();
+     ll n;
+     cin >> n;
+     int a[n];;
+     for(int i=0;i<n;i++)
+     {
+         cin >> a[i];
+         occur[a[i]]++;
+     }
+     ll sz=primegula.size();
+     for(int i=0;i<sz;i++)
+     {
+         for(int j=primegula[i];j<N;j+=primegula[i])
+         {
+             cnt[primegula[i]]+=occur[j];
+         }
+     }
+     for(int i=1;i<N;i++)
+     {
+         pref[i]=pref[i-1]+cnt[i];
+     }
+     int q;
+     cin >> q;
+     while(q--)
+     {
+         int l,r;
+         cin >> l >> r;
+         r=min(r,N-1);
+         l=min(l,N-1);
+ 
+         cout<<pref[r]-pref[l-1]<<"\n";
+ 
+     }
+}
