@@ -1,0 +1,68 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long int
+ 
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout for(auto v: vect) cout<<v<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+ 
+#define mini_pos(a)    ( min_element((a).begin(), (a).end()) - (a).begin())
+#define maxi_pos(a)    ( max_element((a).begin(), (a).end()) - (a).begin())
+ 
+#define F first
+#define S second
+#define YES cout<<"YES\n"
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO cout<<"NO\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+#define testcase ll t;cin >>t; while(t--)
+int main()
+{
+    fastkor;
+    testcase{
+ 
+     int n;
+     cin >> n;
+     vector<int>vect;
+     vectin(n);
+     stack<int>stk;
+     ll ans=0;
+     int last=0;
+     for(int i=0;i<n;i++)
+     {
+         if(vect[i]==0)
+         {
+             if(!stk.empty())
+             {
+                 ans+=stk.top();
+                 stk.pop();
+             }
+             else{
+             ans+=last;
+             last=0;
+             }
+ 
+         }
+         else{
+                if(!stk.empty()){
+                ll temp=stk.top();
+              if(vect[i]>temp)
+            stk.push(vect[i]);
+            else
+                last=vect[i];
+                }
+                else
+                    stk.push(vect[i]);
+         }
+     }
+     cout<<ans<<"\n";
+    }
+}
