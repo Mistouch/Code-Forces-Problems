@@ -1,0 +1,86 @@
+// ----------------------------------------SHAHRIA SARKER SHUVO -----------------------------------------
+//-------------------------------------CSE North South University----------------------------------------
+/*
+void sieve(ll n)
+{
+    isprime.assign(n+1,true);
+    isprime[0]=isprime[1]=false;
+    for(ll i=2;i*i<=n;i++)
+    {
+        if(!isprime[i])
+            continue;
+        for(int j=i*i;j<=n;j+=i)
+            isprime[j]=false;
+ 
+    }
+    for(ll i=2;i<=n;i++)
+    {
+        if(isprime[i])
+            primegula.pb(i);
+    }
+}
+*/
+#include<bits/stdc++.h>
+using namespace std;
+ 
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long int
+ 
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout for(auto v: vect) cout<<v<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+ 
+#define mini_pos(a)    ( min_element((a).begin(), (a).end()) - (a).begin())
+#define maxi_pos(a)    ( max_element((a).begin(), (a).end()) - (a).begin())
+ 
+#define F first
+#define S second
+#define YES cout<<"YES\n"
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO cout<<"NO\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+#define testcase ll t;cin >>t; while(t--)
+int main()
+{
+    fastkor;
+ 
+     int r,c;
+     cin >>r >> c;
+     char st[r][c];
+     for(int i=0;i<r;i++)
+     {
+         for(int j=0;j<c;j++)
+         {
+             cin >> st[i][j];
+         }
+     }
+     string str="face";
+     sortkor(str);
+     int cnt=0;
+      for(int i=0;i<r;i++)
+     {
+         string s="";
+         for(int j=0;j<c;j++)
+         {
+              if(i+1==r || j+1==c)
+              continue;
+           s+=st[i][j];
+           s+=st[i][j+1];
+           s+=st[i+1][j];
+           s+=st[i+1][j+1];
+            sortkor(s);
+         if(s==str)
+            cnt++;
+            s="";
+         }
+ 
+ 
+     }
+     cout<<cnt<<"\n";
+}
