@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long int
+
+int main()
+{
+
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    int n,k;
+    cin >> n>>k;
+    map<ll,ll>mp;
+    for(ll i=0;i<n;i++)
+    {
+        ll x;cin >> x;
+       mp[x]++;
+    }
+    vector<ll>vect;
+    for(auto m : mp)
+        vect.push_back(m.second);
+
+    ll x=vect.size();
+    ll c=0;
+    for(ll i=0;i<x-1;i++)
+    {
+        for(ll j=i+1;j<x;j++)
+            c+=(vect[i]*vect[j]);
+    }
+   cout<<c;
+}
