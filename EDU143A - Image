@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+     int t_case;
+     cin >> t_case;
+     while(t_case--)
+     {
+
+      string s,s2;
+      cin >> s>> s2;
+      set<char>st;
+      st.insert(s[0]);
+      st.insert(s[1]);
+      st.insert(s2[0]);
+      st.insert(s2[1]);
+       int x=st.size();
+       cout<<(x-1)<<"\n";
+
+     }
+}
