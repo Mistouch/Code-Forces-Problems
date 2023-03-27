@@ -1,0 +1,81 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long int
+ 
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout for(auto v: vect) cout<<v<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+ 
+#define mini_pos(a)    ( min_element((a).begin(), (a).end()) - (a).begin())
+#define maxi_pos(a)    ( max_element((a).begin(), (a).end()) - (a).begin())
+ 
+#define F first
+#define S second
+#define YES cout<<"YES\n"
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO cout<<"NO\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+#define testcase ll t; cin >>t; while(t--)
+const double err=1e-9;
+/// 29 --7 --- 21
+int main()
+{
+   fastkor;
+    testcase
+    {
+ 
+       int n;
+       cin >> n;
+       vector<int>vect[n];
+       map<int,int>mp;
+       for(int i=0;i<n;i++)
+       {
+           int x;
+           cin >> x;
+           vect[i].resize(x);
+ 
+           for(int j=0;j<x;j++)
+           {
+               cin >> vect[i][j];
+               mp[vect[i][j]]++;
+           }
+       }
+       bool p=true;
+       vector<int>ans;
+       for(int i=0;i<n;i++)
+       {
+           bool ok=0;
+           for(auto x : vect[i])
+           {
+               mp[x]--;
+               if(!ok && mp[x]==0 )
+               {
+                   ans.pb(x);
+                   ok=1;
+               }
+           }
+           if(!ok)
+           {
+               cout<<"-1\n";
+               p=false;
+               break;
+           }
+       }
+       if(p){
+           for(auto x : ans)
+        cout<<x<<" ";
+       cout<<"\n";
+       }
+ 
+ 
+    }
+ 
+}
