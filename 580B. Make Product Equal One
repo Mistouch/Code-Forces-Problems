@@ -1,0 +1,66 @@
+// ----------------------------------------SHAHRIA SARKER SHUVO -----------------------------------------
+//-------------------------------------CSE North South University----------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long
+
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout(v) for(auto p: v) cout<<p<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+#define all(vect) vect.begin(),vect.end()
+#define mini_pos(a)    ( min_element((a).begin(), (a).end()) - (a).begin())
+#define maxi_pos(a)    ( max_element((a).begin(), (a).end()) - (a).begin())
+
+#define F first
+#define S second
+#define gcd(a,b) __gcd(a,b)
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+#define testcase ll t; cin >>t; while(t--)
+
+#define yes cout<<"yes\n";
+#define Yes cout<<Yes\n";
+#define YES cout<<"YES\n";
+
+#define no cout<<"no\n";
+#define No cout<<"No\n";
+#define NO cout<<"NO\n";
+const long long int N=1e9+7;
+const int dx[4]= {-1,0,1,0};
+const int dy[4]= {0,1,0,-1};
+int main()
+{
+   fastkor;
+   vector<int>vect;
+   int n;
+   cin >> n;
+   vectin(n);
+
+  ll ans=0;
+  ll cnt=0;
+  ll ze=0;
+  for(int i=0;i<n;i++)
+  {
+      if(vect[i]<0)
+        cnt++;
+        if(vect[i]==0)
+            ze++;
+        vect[i]=abs(vect[i]);
+      ans+=abs(vect[i]-1);
+      if(vect[i]<0)
+        cnt++;
+  }
+  if(cnt%2==1 && ze<=0)
+    ans+=2;
+
+  cout<<ans<<"\n";
+
+}
