@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+int main()
+{
+    ll t;
+    cin >> t;
+    while(t--){
+        ll a,b,c;
+        cin >> a >> b >> c;
+        ll x=0;
+        if(c&1)
+          x=(c/2)+1;
+        else
+            x=c/2;
+        ll y=c-x;
+
+       a+=x;
+       b+=y;
+        if(a>b)
+            cout<<"First\n";
+        else
+            cout<<"Second\n";
+    }
+}
