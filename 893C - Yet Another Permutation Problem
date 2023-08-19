@@ -1,0 +1,146 @@
+/*^^^^^^^^^^^^^^^^^^^^^^^:::::::::::::^^~!!!~^::::::::::::::::::::................................
+^^^^^^^^^^^^^^^^^^^^^^^:::::^^^^^~!!!~~^::::::::::::::::::::::::...............................
+^^^^^^^^^^^^^^^^^^^^^^^:::^~!77?7?~^:::::::::::::::::::::::::::................................
+^^^^^^^^^^^^^^^^^^^^^^^^~~!!!^^::~^:::::::::::::::::::::::::::................................
+^^^^^^^^^^^^^^^^^^^~!!!~~^^^~^~^^~^:::::::::::::::::::::::::::...............................
+^^^^^^^^^^^^^^~!!!!~^^^::::::^^^^^:::::::::::::::::::::::::::................................
+^^^^^^^^^~~!!!~~^^^^^^::::::::::::::^:::::::^^~!!~~~^:::::::................................
+^^^^~~!!!!~^^^^^^^^^:::::::::::^^~^^^^^^^~!JY55YYJJ??7!^:::::...............................
+~!!!!~~^^^^^^^^^^^^::::::::::^^!?J?????JYPPGGGGPPPP55YY?~^:::..............................
+~~^^^^^^^^^^^^^^^^^:::::^^^~!~7YPP555PGGGGGGGGGGGGPPPP55J?!~::.............................
+^^^^^^^^^^^^^^^^^^::^^!77JYYJYPPPPPGGBBBBBBGGGGGGGGGPPP55JJ?!^:...........................
+^^^^^^^^^^^^^^^^^^^~7JYJYPGGGGGGGGGBBBBBBBGGGGGGGGGPGPP55Y?YYJ7~:........................
+^^^^^^^^^^^^^^^^^^~J55PPGGGBBBBBBBBBBBBGGGGGGGGGGGGPGGPPP5JY555J7:......................
+^^^^^^^^^^^^^^^^^~?PGGGGGBBBBBBBBBBBBGP555555PPPGGGPGGGP55YJY55Y?!:.....................
+^^^^^^^^^^^^^^^^^75PPGGGGBBBBBBBBBBGP5YJJYYGGPPPPPPPPGGPP55YJJY5YY?!^:.................
+^^^^^^^^^^^^^^^^^YPPGGGBBBBBBBBBBBGPYYY5555GBGGGGGGGPPPPP5555J?Y555YJ!^...............
+^^^^^^^^^^^^^^:^^YGPGBBBBBBBBBBBGP555555P55GGBBBBBGGGGPP55Y55555PPP55J7~.............
+^^^^^^^^^^^^^:^^~YPGGGGBBBBBBBBG5555555PP55GGBBBBGGGGGG55Y?JY555PPP55YJ7:............
+^^^^^^^^^^^::::^~JPGGGBBBBBBBBP555555555555PGGBBBBBGGGGP5YJJ?Y55Y?JYJ??!^............
+^^^^^^^^^:::^^^^75PPPGGBBBBBBG5YYYYYYYYYY55PPPPGGGGGBGGP5YJ?7?5P5J?JJ7~~~............
+^^^^^^^^^:::::^^?5PPPPPGGBBGGPYYYYYYYYYYY555PPPPPPPPPP55YYYYJ7!Y55YYJJ?~^............
+^^^^^^^^^:::::^^75P55PGGPPP5P55YYYYYYYYYYY555555PPPPP555PPP5YJ!75YYJ??J?:...................
+^^^^^^^^:::::::^75Y5PGGGPP55555555YYYYYYY55555YYYY5PPP5PPPP5YY?7YJJJJJJ!:.................
+^^^^^^^::::::::^7YY5PGGGGP55555555YYYY55555555YYYYY555PPP5Y??J?!~!!7??7^..................
+^^^^^^:::::::::^!5555PPPGGP5555YYYYYY55555555555555555555J??!!!!^::::^^...................
+^^^^^^^^^^^^^^^^^YPPPP555PP5555YYYYYY5555555555PPPPPPPPP55Y?~~~^:.....................            .:
+^^^^^^^^^^^^^^^^^7PGBBG55PPP55YYYYYY55555555555PPPPPPP555YYJ77!~::......................        .:^^
+^^^^::::::::::::^~JPGBBGP555YYYY55555555555555PP55555555YJ?7~~?7~:.........................   .:^^^^
+^^^:::::::::::::::^?PGBBG555YYY55555555555PPPPPP555555555PPY?~~~~:....................      .:^^^^~!
+^^:::::::::::::::::^JPGBBP55YYY555555PPPPPPPPPPP5555555YYJJJ?!~^^..........................:^^^^^~7?
+^:::::::::::::::::::^JGBBGY55555555PPPPPPPPPPP55555555YY?7~~~~~~:.........................:^^^^!77??
+^^^^^::::::::::::::::~YGBB55555555PPPPPPPPPPPPPPPPPPPPP5YYJ!^^~^........................:^^^^~7JYJ7?
+^^^^^^^^^:::::::::::::~?5G5Y5555PPPPPPPPPPPPGGGGGGGGGGGPP5Y?!~^.......................:^^^^~7??JYYJ7
+::::::::::::::::::::::::!P5Y55PPPPPPPPGGGGGGGGGGGGGGGGGGGP5J7~:.....................:^^^^~!?????JJJ?
+::::::::::::::::::::::::^?YY555PPPPPPPGGGGGGGGGGGGGGGGPPP5Y7~:....................:^^^^~77??????7?7!
+::::::::::::::::::::::^^~!?Y555PPPPPPPPGGGGGGGGGGGPPP55YY?~::...........:::......:^^^~7JYJ7????77~~~
+::::::::::::::::^^~7?JYY5PY555PPPPPPPPPPPGGGGGGGPP5Y?7~!YYYJ7!~^:.....:~!!!!~~^^^^^~!??YYYJ7??7!~^^^
+::::::::::::^~!?JY555PPPPPY55PPPPPPPPPPPPPPPPPPP5Y?!~~^!Y5555YYJJ7!^:.^77!!!!~^^^^!?????YYJ7!~~^^~!?
+::::::::^~!?JY555555PPPPPPY55PPPPPPPPPPPGGGPPPP5Y?!!~~^!5555555555YYJ??777!~^^^^!?J???????7!~^^~!?JJ
+::::^~!?JYY5555555PPPPPPPYY5PPPPPPPPPPPPGGGGPP5Y?7!!!~~!5555555555555YYYJ?!^^^~?Y5Y????7!~~^^~!?JJJ?
+^~!?JY555PPPPPPPGPP55555YY55PPPPPPPPPPPPGGGPPPYJ??77!~~!5PP5PPPPPP5555555YYJ77?J555Y77!~~~^~7J7?JJJJ
+JY55PPPPPPPPPPGPP555Y555555PPPPPPPPPPPPPGGPPP5YJJJ?7!!~7PPPPGGPPPPPPPP5555555YJ?5P5J!~~^^~7JYJJ7JJJJ
+YYYYYYY5YYJYYYYYYYYY55PP5PPPPPPPPPPPPGGGGGPPPP55YYJ7!!~!YY5PPPPPGGGPPPPPP5555555YY?~~~^~7JJJYYY?7JJJ
+JJJJYYY55YJYYYYYY5Y555PPPPPPPPPPPGGGGGGGGGGGPPPP5YJ7!!~~!~!7?JYY555555YY5Y55555555Y?!!7JJJJJYYJ?777!
+YYYYYYPP5YYYYJY5P55555PPPPPPPPPPGGGGGGGGGGGGGPPP5Y?7!~~!?~~~!~?JYYJJYJ??JJJJJJJJYYY5YJ??JJJJJJ??!~~^
+YYY55PPP5555YYPPP5555PPPPPPPPPPPGGGGGGGGGGGGGGPPY?7!!!7J!~~!?!^~!777J5P5J?Y??JJJ????777?77??77!~^^~~
+5555PPPP555555PPPP55PPPPPPPPPPPPPPPGGGGGGGGGGPPY?!!!777~~~~7YJ~^~7?J?7!77?7!!7??!7????7!!~!7!!~~^~~!
+PPPPPPPPP5P55PPGPPPPPPPPPPPPPPPPPP55555555555YJ7!~~!!~~~~~!JY57^~!!7YYJ7!~~77!~~!77?JJ???!!7777!!!??
+PPPPPPPPPPP55PPPPPPPPPPPPPPPPPPPPGGGPPPPPP555YY?77!!!~~~~~?YY5J^~!?!!J55Y?!~!??!!JJ?7!~!7!~7?J?777?7
+PPPPPPPPPPPP55PPPPPPPPPPPPPPPPPPPPPPPPP555555YYJJ7!
+*/
+
+
+// ----------------------------------------SHAHRIA SARKER SHUVO -----------------------------------------
+//-------------------------------------CSE North South University----------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long
+
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout(v) for(auto p: v) cout<<p<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+#define all(vect) vect.begin(),vect.end()
+#define mini_pos(a)    ( min_element((a).begin(), (a).end()) - (a).begin())
+#define maxi_pos(a)    ( max_element((a).begin(), (a).end()) - (a).begin())
+
+#define F first
+#define S second
+#define gcd(a,b) __gcd(a,b)
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+#define testcase ll t; cin >>t; while(t--)
+
+#define yes cout<<"yes\n";
+#define Yes cout<<Yes\n";
+#define YES cout<<"YES\n";
+
+#define no cout<<"no\n";
+#define No cout<<"No\n";
+#define NO cout<<"NO\n";
+vector<bool>isprime;
+vector<int>primegula;
+void sieve(ll n)
+{
+    isprime.assign(n+1,true);
+    isprime[0]=isprime[1]=false;
+    for(ll i=2; i*i<=n; i++)
+    {
+        if(!isprime[i])
+            continue;
+        for(int j=i*i; j<=n; j+=i)
+            isprime[j]=false;
+
+    }
+    for(ll i=2; i<=n; i++)
+    {
+        if(isprime[i])
+            primegula.pb(i);
+    }
+}
+const long long int N=20001;
+const int dx[4]= {-1,0,1,0};
+const int dy[4]= {0,1,0,-1};
+vector<int>G[N];
+//vector<bool>vis(N);
+int res=0;
+
+int main()
+{
+    fastkor;
+   testcase{
+      ll n;
+      cin >> n;
+      vector<bool>vis(n+1);
+     for(int i=0;i<n+1;i++)
+        vis[i]=false;
+       for(int i=1;i<=n;i++)
+       {
+           if(!vis[i])
+           {
+               cout<<i<<" ";
+               ll rn=2*i;
+               vis[i]=true;
+               while(1){
+                if(rn<=n && !vis[rn])
+                {
+                    cout<<rn<<" ";
+                    vis[rn]=true;
+                    rn*=2;
+                }
+                else
+                    break;
+               }
+           }
+       }
+       cout<<"\n";
+   }
+}
