@@ -1,0 +1,142 @@
+// ----------------------------------------SHAHRIA SARKER SHUVO -----------------------------------------
+//-------------------------------------CSE North South University----------------------------------------
+#include<bits/stdc++.h>
+using namespace std;
+ 
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long
+ 
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout(v) for(auto p: v) cout<<p<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+#define all(vect) vect.begin(),vect.end()
+#define mini_pos(a)    ( min_element((a).begin(), (a).end()) - (a).begin())
+#define maxi_pos(a)    ( max_element((a).begin(), (a).end()) - (a).begin())
+ 
+#define F first
+#define S second
+#define gcd(a,b) __gcd(a,b)
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+#define testcase ll t; cin >>t; while(t--)
+ 
+#define yes cout<<"yes\n";
+#define Yes cout<<Yes\n";
+#define YES cout<<"YES\n";
+ 
+#define no cout<<"no\n";
+#define No cout<<"No\n";
+#define NO cout<<"NO\n";
+vector<bool>isprime;
+vector<int>primegula;
+void sieve(ll n)
+{
+    isprime.assign(n+1,true);
+    isprime[0]=isprime[1]=false;
+    for(ll i=2; i*i<=n; i++)
+    {
+        if(!isprime[i])
+            continue;
+        for(int j=i*i; j<=n; j+=i)
+            isprime[j]=false;
+ 
+    }
+    for(ll i=2; i<=n; i++)
+    {
+        if(isprime[i])
+            primegula.pb(i);
+    }
+}
+const int N=1e5;
+ 
+int main()
+{
+    fastkor;
+    testcase
+    {
+ 
+        ll n;
+        vector<int>vect;
+        vector<int>len;
+        cin >> n;
+        ll sm=0;
+        for(int i=0; i<n; i++)
+        {
+            int x;
+            cin >> x;
+            sm+=x;
+            vect.pb(x);
+        }
+        ll ans=0;
+        ll res=INT_MAX;
+        for(int i=n; i>=1; i--)
+        {
+            if(sm%i!=0)continue;
+ 
+            int temp=sm/i;
+ 
+            int t=0;
+            int trc=0;
+            bool ok=false;
+            for(int j=0; j<n; j++)
+            {
+                trc+=vect[j];
+ 
+                if(trc>temp)
+                {
+                    ok=false;
+                    break;
+                }
+ 
+                if(trc==temp)
+                {
+                    t++;
+                    trc=0;
+                }
+            }
+            if(ok)
+                continue;
+            if(t==i)
+            {
+                res=-1;
+                ans=i;
+                ll tt=sm/ans;
+                ll cc=0;
+                ll tr=0;
+ 
+                for(int i=0; i<n; i++)
+                {
+                    cc+=vect[i];
+                    tr++;
+                    if(cc==tt)
+                    {
+                        res=max(res,tr);
+                        tr=0;
+                        cc=0;
+                    }
+                }
+                len.pb(res);
+            }
+ 
+ 
+        }
+        if(ans==0)
+        {
+            cout<<n<<"\n";
+            continue;
+        }
+ 
+        else
+            {
+                sortkor(len);
+                cout<<len[0]<<"\n";
+            }
+    }
+ 
+}
