@@ -1,0 +1,105 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define fastkor ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+#define endl '\n'
+#define ll long long
+
+#define dvect vector<int>vect
+#define pb(x) push_back(x)
+#define vectinL(n) for(ll i=0;i<n;i++){ ll x; cin >> x; vect.push_back(x);}
+#define vectin(n) for(int i=0;i<n;i++){ int x; cin >> x; vect.push_back(x);}
+#define vectout(v) for(auto p: v) cout<<p<<" "; cout<<endl;
+#define sortkor(x) sort(x.begin(),x.end())
+#define reversekor(x) reverse(x.begin(),x.end())
+#define F first
+#define S second
+#define gcd(a,b) __gcd(a,b)
+#define YES1 cout<<"Case "<<case++<<": YES\n"
+#define NO1 cout<<"Case "<<case++<<": NO\n"
+#define precision(n) fixed<<setprecision(n)
+#define testcase ll t; cin >>t; while(t--)
+
+#define yes cout<<"yes\n";
+#define Yes cout<<Yes\n";
+#define YES cout<<"YES\n"
+
+#define no cout<<"no\n";
+#define No cout<<"No\n";
+#define NO cout<<"NO\n"
+vector<bool>isprime;
+vector<int>primegula;
+///
+//oeihiushdfhsi
+
+int main()
+{
+    fastkor;
+    testcase
+    {
+        vector<set<int>>vect;
+
+        ll n;
+        cin >> n;
+       set<int>st;
+       map<int,int>mp;
+        for(int i=0;i<n;i++)
+        {
+           set<int>ss;
+
+            int x;
+            cin >> x;
+            for(int j=0;j<x;j++)
+            {
+                ll v;
+                cin >> v;
+                ss.insert(v);
+                mp[v]++;
+                st.insert(v);
+            }
+            vect.push_back(ss);
+        }
+       // sortkor(mp);
+
+        int mn=INT_MAX;
+       for(auto x: mp)
+           mn=min(x.S,mn);
+
+      vector<int>mini;
+
+      for(auto x: st)
+          {
+              mini.pb(x);
+          }
+
+
+        ll mx=0;
+        ll tt=0;
+       // vectout(mini);
+          for(int i=0;i<mini.size();i++)
+          {
+               tt=0;
+               set<int>ss;
+              for(int j=0;j<n;j++)
+              {
+                  set<int>str=vect[j];
+
+                  if(str.count(mini[i])) continue;
+                  for(auto x:str)
+                    ss.insert(x);
+              }
+              tt=ss.size();
+              if(tt<st.size())
+                mx=max(tt,mx);
+
+
+          }
+          //cout<<st.size()<<"\n";
+          if(tt<st.size())
+           mx=max(tt,mx);
+          cout<<mx<<"\n";
+
+
+        }
+
+    }
